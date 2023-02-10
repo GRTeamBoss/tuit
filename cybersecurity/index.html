@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption</title>
+    <script src="./main.js" type="text/javascript"></script>
+</head>
+<body>
+    <a href="./../index.html"><h1>Pages</h1></a>
+    <br>
+    <button onclick="history.back()">&larr; Back</button>
+    <select name="alphabet" id="alphabet">
+        <option value="alphabetRussian" selected>RU</option>
+        <option value="alphabetEnglish">EN</option>
+    </select>
+    <section id="cesar">
+        <h2>Cesar Encryption</h2>
+        <label for="cesar-value">Value : </label>
+        <input type="text" name="cesar-value" id="cesar-value" onkeyup="cesar(this)">
+        <pre id="cesar-result"></pre>
+    </section>
+    <section id="sentence-shift">
+        <h2>Sentence Shift</h2>
+        <label for="sentence-value">Value : </label>
+        <input type="text" name="sentence-value" id="sentence-value">
+        <label for="sentence-key">Key : </label>
+        <input type="text" name="sentence-key" id="sentence-key" onkeyup="sentence(this)">
+        <br>
+        <table id="sentence-table-before">
+            <tt>Value before</tt>
+        </table>
+        <table id="sentence-table-after">
+            <tt>Value after</tt>
+        </table>
+        <pre id="sentence-result"></pre>
+    </section>
+    <section id="alphabet-shift">
+        <h2>Alphabet Shift</h2>
+        <label for="shift-value">Value : </label>
+        <input type="text" name="shift-value" id="shift-value">
+        <label for="shift-key">Key : </label>
+        <input type="text" name="shift-key" id="shift-key" onkeyup="shift(this)">
+        <pre id="shift-result"></pre>
+    </section>
+</body>
+</html>
